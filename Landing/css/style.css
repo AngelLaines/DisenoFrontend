@@ -22,6 +22,8 @@ header {
     
     position: fixed;
     width: 100%;
+
+    box-shadow: 10px 6px 8px rgba(0, 0, 0, 0);
 }
 
 nav {
@@ -36,7 +38,6 @@ nav ul {
     display: flex;
 }
 
-
 nav li{
     padding: 1rem 2rem;
 }
@@ -46,11 +47,28 @@ nav a{
     
 }
 
+section{
+    height: 100vh;
+    scroll-margin-top: 90px;
+    padding: 45px 90px;
+    border: 1px dashed rgb(198, 163, 235) ;
+}
+
+footer {
+    background-color: rgb(174, 202, 247);
+    height: 50vh;
+}
+
 #home {
     background-color: rgb(174, 202, 247);
 }
 
-#logo, #contacto{
+#logo,#contacto{
+    width: 55px;
+    height: 55px;
+}
+
+#logo > img, #contacto > img{
     width: 55px;
     height: auto;
 }
