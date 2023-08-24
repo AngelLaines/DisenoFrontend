@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Desarrollo 4litro</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
     <header>
-        <a id="logo" href="" onclick="hola()">
+        <a id="logo" href="#home" onclick="hola()">
             <img src="img/pajaro.png" alt="" title="Logo" />
         </a>
         <nav>
@@ -23,28 +25,29 @@
         <a id="contacto" href="#footer">
             <img src="img/telefono-inteligente.png" alt="" title="Contactanos">
         </a>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
     </header>
 
     <main>
         <section id="home">
-            <h1>Inicio</h1>
-            <h2>Bienvenido a nuestro sitio de desarrolladores e inmobiliarios ISI</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ad deserunt. Consequatur, magni
-                maiores? Ut laborum, aperiam earum cum doloremque eligendi, facilis explicabo dolorem consequuntur
-                obcaecati quos totam delectus molestias.
-                Autem perspiciatis modi explicabo cumque, odit iste vitae asperiores aspernatur animi amet unde
-                consequatur voluptas voluptatem, nam molestiae fugit praesentium numquam harum fuga repudiandae alias!
-                Ipsam autem laboriosam iure accusantium?
-                Rem quia libero provident illum impedit quas, magnam, iste sapiente, corrupti aperiam possimus
-                laudantium perferendis aut accusamus repellendus dolor nesciunt asperiores atque saepe labore nihil
-                dicta? Eius dicta maiores neque!
-                Laudantium dignissimos porro praesentium excepturi odit autem veniam, quos libero! Quos aliquid aperiam
-                quia harum! Molestias, obcaecati at a dolor corrupti, provident mollitia qui, enim asperiores ipsum
-                quos! Repellat, vero.
-                Vel delectus nesciunt, corporis enim nostrum voluptatem libero commodi nobis molestias soluta quae quis
-                aspernatur sapiente possimus harum veniam ullam in, quidem iste laudantium placeat excepturi
-                perspiciatis esse autem. Asperiores.</p>
+            <div class="home-banner">
+                <h1>Inicio</h1>
+                <h2>Bienvenido a nuestro sitio de desarrolladores e inmobiliarios ISI</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ad deserunt. Consequatur, magni
+                    maiores? Ut laborum, aperiam earum cum doloremque eligendi, facilis explicabo dolorem consequuntur
+                    obcaecati quos totam delectus molestias.
+                    Autem perspiciatis modi explicabo cumque, odit iste vitae asperiores aspernatur animi amet unde
+                    consequatur voluptas voluptatem, nam molestiae fugit praesentium numquam harum fuga repudiandae alias!
+                    Ipsam autem laboriosam iure accusantium?
+                    Rem quia libero provident illum impedit quas, magnam, iste sapiente, corrupti aperiam possimus
+                    laudantium perferendis aut accusamus repellendus dolor nesciunt asperiores atque saepe labore nihil
+                    dicta? Eius dicta maiores neque!
+                    Laudantium dignissimos porro praesentium excepturi odit autem veniam, quos libero! Quos aliquid aperiam
+                    quia harum! Molestias, obcaecati at a dolor corrupti, provident mollitia qui, enim asperiores ipsum
+                    quos! Repellat, vero.
+                    Vel delectus nesciunt, corporis enim nostrum voluptatem libero commodi nobis molestias soluta quae quis
+                    aspernatur sapiente possimus harum veniam ullam in, quidem iste laudantium placeat excepturi
+                    perspiciatis esse autem. Asperiores.</p>
+            </div>
         </section>
 
         <section id="destacados">
@@ -128,10 +131,15 @@
 
     <footer id="footer">
         <h1>Formulario de contactos</h1>
-        <h3>Contactis adicionales | Redes sociales</h3>
+        <h3>Contactos adicionales | Redes sociales</h3>
         <p>Desarrollares e inmobiliarios ISI &copy; 2023</p>
     </footer>
 
+    <button id="btn-ir-arriba" >
+        <svg viewBox="0 0 24 24">
+          <path d="m4 16 8-8 8 8"></path>
+        </svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
