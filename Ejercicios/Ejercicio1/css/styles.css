@@ -2,6 +2,8 @@
     --Fondo: #280c61;
     --ColorLetra: #dfd5d5;
     --HeadFoot: #1a0446;
+    --FontSize: 18px;
+    --FontWeight: 600;
 }
 
 * {
@@ -14,8 +16,9 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--Fondo);
-    font-size: 16px;
-    font-weight: 600;
+    font-size: var(--FontSize);
+    font-weight: var(--FontWeight);
+    text-align: justify;
 }
 
 header {
@@ -30,7 +33,11 @@ header {
     position: fixed;
     width: 100%;
 
-    box-shadow: 0px 5px 8px rgba(21, 21, 21, 0.2);
+    box-shadow: 0px 5px 8px rgba(21, 21, 21, 0.5);
+}
+
+main {
+    padding-top: 90px;
 }
 
 nav {
@@ -47,11 +54,21 @@ nav ul {
 
 nav li {
     padding: 1rem 2rem;
+    margin: 5px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--ColorLetra);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 1.50rem;
+}
+
+section#home {
+    padding: 45px 90px;
 }
 
 section#destacados,
@@ -61,7 +78,7 @@ section#top-week {
     height: 100vh;
     scroll-margin-top: 90px;
     padding: 45px 90px;
-    background: conic-gradient(at left top, rgb(17, 24, 39), rgb(88, 28, 135), rgb(124, 58, 237));
+    background: conic-gradient(at left top, rgb(17, 24, 39), rgb(33, 28, 135), rgb(85, 58, 237));
     color: var(--ColorLetra);
     /* border: 1px dashed rgb(197, 142, 117); */
 }
@@ -70,9 +87,14 @@ section#top-week {
 
 .title-of-section {
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     height: 20vh;
+}
+
+section#home h1{
+    font-size: 2rem;
 }
 
 section.title-of-section h1 {
@@ -80,9 +102,17 @@ section.title-of-section h1 {
     font-size: 2rem;
     /* border-bottom: 5px solid rgb(197, 142, 117); */
     color: var(--ColorLetra);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-top: 3rem;
     text-align: center;
+}
+
+section#destacados h2,
+section#actor h2,
+section#awards h2,
+section#top-week h2{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 footer {
@@ -95,10 +125,19 @@ footer {
     background-color: var(--HeadFoot);
 }
 
-#home {
-    background: url('../img/banner.png') no-repeat center center fixed;
-    background-size: cover;
+footer#footer {
+    padding: 45px 90px;
+    display: flex;
+    flex-direction: column;
+}
 
+footer#footer h1 {
+    margin-bottom: 10px;
+}
+
+#home {
+    background: url('../img/banner.jpg') no-repeat center center fixed;
+    background-size: cover;
     height: 60vh;
 }
 
@@ -118,10 +157,16 @@ footer {
 #contacto {
     width: 55px;
     height: 55px;
-    margin: 15px;
+    margin: 20px;
     display: flex;
     filter: invert(1);
+    transition: all 0.2s ease;
+}
 
+#logo:hover,
+#contacto:hover {
+    width: 60px;
+    height: 60px;
 }
 
 #logo>img,
@@ -154,6 +199,7 @@ footer {
     transition: 100ms step-start;
 
     display: none;
+    transition: all 0.2s ease;
 }
 
 #btn-ir-arriba svg {
@@ -161,4 +207,68 @@ footer {
     stroke-width: 3px;
     width: 25px;
     fill: none;
+}
+
+footer div{
+    margin: 10px;
+    height: 30vh;
+}
+footer div.title-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 10px;
+}
+
+input#asunto, input#comment {
+    font-size: var(--FontSize);
+    font-weight: var(--FontWeight);
+    height: 35px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+button#send{
+    cursor: pointer;
+    font-size: var(--FontSize);
+    background-color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 85px;
+    font-weight: var(--FontWeight);
+    transition: all 0.3s ease;
+}
+button#send:hover, input:hover{
+    background: var(--ColorLetra);
+}
+
+label, input {
+    margin-bottom: 20px;
+}
+
+footer div div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div div div{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div div div img{
+    cursor: pointer;
+    filter: invert(1);
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    transition: all 0.2s ease;
+}
+
+footer div div div img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+footer div div.social-media {
+    margin-right: 100px;
 }
