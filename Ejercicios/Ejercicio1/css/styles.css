@@ -127,9 +127,10 @@ section#home {
     }
 
     .dropdown-child {
-        display: flex;
+        display: grid;
         align-items: center;
         text-align: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
@@ -482,6 +483,15 @@ footer div div.social-media {
 .actor-section {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width:530px){
+    
+    .actor-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .actor-section div img {
