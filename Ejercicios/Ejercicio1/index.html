@@ -6,84 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>Desarrollo</title>
+    <title>Cinema</title>
 </head>
 
 <body>
     <header>
         <a href="#home">
-            <img id="logo" src="img/camara-de-video.png" alt="">
+            <img id="logo" src="img/camara-de-video.png" alt="Inicio" title="inicio">
         </a>
         <nav>
-            <ul>
-                <li><a href="#destacados">Destacados</a></li>
-                <li><a href="#actor">Actor de la semana</a></li>
-                <li><a href="#awards">Premios y reconocimientos</a></li>
-                <li><a href="#top-week">Top pelicula de la semana</a></li>
-            </ul>
+            <div class="dropdown">
+                <button id="main-menu"> Menu Principal</button>
+                <div class="dropdown-child">
+                    <a href="#destacados-title">Destacados</a>
+                    <a href="#actor-title">Actor de la semana</a>
+                    <a href="#awards-title">Premios y reconocimientos</a>
+                    <a href="#top-title">Top pelicula de la semana</a>
+                </div>
+            </div>
         </nav>
         <a href="#footer">
-            <img id="contacto" src="img/llamada-telefonica.png" alt="">
+            <img id="contacto" src="img/llamada-telefonica.png" alt="Contacto" title="Contacto">
         </a>
     </header>
     <main>
         <section id="home">
             <div class="home-banner">
                 <h1>Bienvenido a Cinema</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sequi molestias amet, impedit odit
-                    explicabo quis voluptate consectetur aliquam animi? Soluta facere officiis facilis deserunt delectus
-                    rerum amet, dolor iure.
-                    Omnis, nihil. Voluptatem magnam, optio placeat sit voluptatibus assumenda, maxime id omnis eum et
-                    reprehenderit, ullam enim. Harum sapiente magnam voluptate ex in alias! Omnis debitis quisquam fuga
-                    dicta vitae!
-                    Laborum incidunt cumque enim beatae nihil, quia exercitationem obcaecati recusandae! Error nihil
-                    facere
-                    laboriosam animi sapiente culpa eaque, necessitatibus sunt possimus fugit quaerat minus ullam
-                    asperiores? Harum dolorem voluptate qui.
-                    Culpa iste, facilis cumque minima ea, tempore praesentium aliquid dolorem saepe tempora quisquam
-                    iusto
-                    consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo
-                    recusandae,
-                    ducimus quos perferendis.</p>
+                <p>
+                    En nuestra web, descubre las obras cinematograficas y autores que estan siendo tendencia cada semana.
+                    Enterate de los premios y reconocimientos a directores cinematograficos y actores destacados.
+                </p>
             </div>
         </section>
-        <section class="title-of-section">
+        <section class="title-of-section" id="destacados-title">
             <h1>Destacados</h1>
         </section>
         <section id="destacados">
-            <h2>Visualiza los destacados de la semana</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sequi molestias amet, impedit odit
-                explicabo quis voluptate consectetur aliquam animi? Soluta facere officiis facilis deserunt delectus
-                rerum amet, dolor iure.
-                Omnis, nihil. Voluptatem magnam, optio placeat sit voluptatibus assumenda, maxime id omnis eum et
-                reprehenderit, ullam enim. Harum sapiente magnam voluptate ex in alias! Omnis debitis quisquam fuga
-                dicta vitae!
-                Laborum incidunt cumque enim beatae nihil, quia exercitationem obcaecati recusandae! Error nihil facere
-                laboriosam animi sapiente culpa eaque, necessitatibus sunt possimus fugit quaerat minus ullam
-                asperiores? Harum dolorem voluptate qui.
-                Culpa iste, facilis cumque minima ea, tempore praesentium aliquid dolorem saepe tempora quisquam iusto
-                consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo recusandae,
-                ducimus quos perferendis.</p>
+            <h2>Visualiza las obras destacados de la semana</h2>
+            <div class="slider-container">
+                <div class="img-destacados">
+                    <img src="img/destacados/avengers.jpg" alt="">
+                    <p>Avengers Infinity War</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/destacados/wolverine.jpg" alt="">
+                    <p>Wolverine</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/destacados/katyn.jpg" alt="">
+                    <p>Katyn</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/destacados/bella-y-la-bestia.jpg" alt="">
+                    <p>La Bella y la Bestia</p>
+                </div>
+            </div>
         </section>
-        <section class="title-of-section">
+        <section class="title-of-section" id="actor-title">
             <h1>Actor de la semana</h1>
         </section>
         <section id="actor">
-            <h2>Encuentra al mejor actor de la semana</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sequi molestias amet, impedit odit
-                explicabo quis voluptate consectetur aliquam animi? Soluta facere officiis facilis deserunt delectus
-                rerum amet, dolor iure.
-                Omnis, nihil. Voluptatem magnam, optio placeat sit voluptatibus assumenda, maxime id omnis eum et
-                reprehenderit, ullam enim. Harum sapiente magnam voluptate ex in alias! Omnis debitis quisquam fuga
-                dicta vitae!
-                Laborum incidunt cumque enim beatae nihil, quia exercitationem obcaecati recusandae! Error nihil facere
-                laboriosam animi sapiente culpa eaque, necessitatibus sunt possimus fugit quaerat minus ullam
-                asperiores? Harum dolorem voluptate qui.
-                Culpa iste, facilis cumque minima ea, tempore praesentium aliquid dolorem saepe tempora quisquam iusto
-                consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo recusandae,
-                ducimus quos perferendis.</p>
+            <h2>Mejor actor de la semana</h2>
+            <div class="actor-section">
+                <div>
+                    <img src="img/actor/tony-stark.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Robert Downey Jr.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae earum eveniet ab autem rerum quidem! Qui ullam tenetur sequi! Hic explicabo sit porro neque suscipit in at maiores qui?</p>
+                </div>
+            </div>
         </section>
-        <section class="title-of-section">
+        <section class="title-of-section" id="awards-title">
             <h1>Premios y reconocimientos</h1>
         </section>
         <section id="awards">
@@ -101,23 +96,29 @@
                 consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo recusandae,
                 ducimus quos perferendis.</p>
         </section>
-        <section class="title-of-section">
+        <section class="title-of-section" id="top-title">
             <h1>Top peliculas de la semana</h1>
         </section>
         <section id="top-week">
             <h2>Tomate un descanso y ve las mejores peliculas de la semana</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sequi molestias amet, impedit odit
-                explicabo quis voluptate consectetur aliquam animi? Soluta facere officiis facilis deserunt delectus
-                rerum amet, dolor iure.
-                Omnis, nihil. Voluptatem magnam, optio placeat sit voluptatibus assumenda, maxime id omnis eum et
-                reprehenderit, ullam enim. Harum sapiente magnam voluptate ex in alias! Omnis debitis quisquam fuga
-                dicta vitae!
-                Laborum incidunt cumque enim beatae nihil, quia exercitationem obcaecati recusandae! Error nihil facere
-                laboriosam animi sapiente culpa eaque, necessitatibus sunt possimus fugit quaerat minus ullam
-                asperiores? Harum dolorem voluptate qui.
-                Culpa iste, facilis cumque minima ea, tempore praesentium aliquid dolorem saepe tempora quisquam iusto
-                consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo recusandae,
-                ducimus quos perferendis.</p>
+            <div class="slider-container">
+                <div class="img-destacados">
+                    <img src="img/top/oppenheimer.jpg" alt="">
+                    <p>Oppenheimer</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/top/ahsoka.jpg" alt="">
+                    <p>Ahsoka</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/top/blue-beetle.jpg" alt="">
+                    <p>Blue Beetle</p>
+                </div>
+                <div class="img-destacados">
+                    <img src="img/top/fatum.jpg" alt="">
+                    <p>Fatum</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer id="footer">
@@ -151,7 +152,7 @@
         </div>
 
         <div class="copy">
-            <p>Desarrollares e inmobiliarios ISI &copy; 2023</p>
+            <p>Cinema &copy; 2023</p>
         </div>
     </footer>
 
