@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const scrollToBottom = document.getElementById("contacto");
 
-    scrollToBottom.addEventListener('click', () => {
-        const y = getOffset(toForm).top;
-        window.scrollTo({
-            top: y-135,
-            behavior: "smooth"
-        })
-    });
+    // scrollToBottom.addEventListener('click', () => {
+    //     const y = getOffset(toForm).top;
+    //     window.scrollTo({
+    //         top: y-135,
+    //         behavior: "smooth"
+    //     })
+    // });
 
     scrollToDestacados.addEventListener('click', () => {
         const y = getOffset(toDestacados).top;
@@ -66,6 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         });
     });
+
+    const menuButton = document.getElementById('main-menu');
+    menuButton.addEventListener('click',()=>{
+        document.body.classList.toggle('visible-menu');
+    });
+    
 });
 /**
  * Recibe un H1 Tag y regresa un objeto
