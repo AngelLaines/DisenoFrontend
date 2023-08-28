@@ -48,6 +48,7 @@ nav {
 }
 
 nav div div a {
+    cursor: pointer;
     font-size: relative;
     text-decoration: none;
     color: var(--ColorLetra);
@@ -127,6 +128,8 @@ section#home {
 
     .dropdown-child {
         display: flex;
+        align-items: center;
+        text-align: center;
     }
 
 }
