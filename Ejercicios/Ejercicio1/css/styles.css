@@ -11,9 +11,6 @@
 
 @media (min-width:1020px) {
     :root {
-        --Fondo: #280c61;
-        --ColorLetra: #dfd5d5;
-        --HeadFoot: #1a0446;
         --FontSize: 24px;
         --FontWeight: 600;
         --NavFontSize: 1.35rem;
@@ -24,9 +21,7 @@
 
 @media (min-width:990px) {
     :root {
-        --Fondo: #280c61;
-        --ColorLetra: #dfd5d5;
-        --HeadFoot: #1a0446;
+        
         --FontSize: 24px;
         --FontWeight: 600;
         --NavFontSize: 1.25rem;
@@ -64,15 +59,15 @@ header {
     box-shadow: 0px 5px 8px rgba(21, 21, 21, 0.5);
 }
 
-@media(max-width:930px){
-    header{
+@media(max-width:930px) {
+    header {
         display: flex;
         flex-direction: row-reverse;
         position: fixed;
     }
 
-    #anchorLogo{
-        margin-right: 42%;
+    #anchorLogo {
+        /* margin-right: 42%; */
     }
 }
 
@@ -193,7 +188,7 @@ section#home {
         transition: all 0.2s linear;
         box-shadow: 0px 5px 8px rgba(21, 21, 21, 0.5);
     } */
-    
+
     .dropdown-child {
         box-shadow: 0px 5px 8px rgba(21, 21, 21, 0.5);
         position: fixed;
@@ -247,6 +242,7 @@ section#home {
     #main-menu span:nth-child(1) {
         top: 0;
     }
+
     #main-menu span:nth-child(2) {
         top: calc(40%);
     }
@@ -359,10 +355,12 @@ footer#footer h1 {
 }
 
 #home {
-    background: url('../img/banner.jpg') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    background: no-repeat center center, linear-gradient(rgba(0, 0, 0, 0.5), rgba(45, 81, 131, 0.5)), url('../img/banner1.jpg');
     background-size: cover;
     width: 100%;
-    height: auto;
+    min-height: 40rem;
 }
 
 .home-banner {
@@ -622,14 +620,8 @@ footer div div.social-media {
     }
 }
 
-.actor-section div img {
-    padding: 10px
-}
-
-.actor-section div p {
-    padding: 10px;
-}
-
+.actor-section div img,
+.actor-section div p,
 .actor-section div h3 {
-    padding: 10px;
+    padding: 10px
 }
