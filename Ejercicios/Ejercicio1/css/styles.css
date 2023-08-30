@@ -65,10 +65,6 @@ header {
         flex-direction: row-reverse;
         position: fixed;
     }
-
-    #anchorLogo {
-        /* margin-right: 42%; */
-    }
 }
 
 main {

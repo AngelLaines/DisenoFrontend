@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const toActor = document.getElementById('actor-title');
     const toAwards = document.getElementById('awards-title');
     const toTop = document.getElementById('top-title');
-    const toForm = document.getElementById('form-title');
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
@@ -27,16 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         })
     });
-
-    const scrollToBottom = document.getElementById("contacto");
-
-    // scrollToBottom.addEventListener('click', () => {
-    //     const y = getOffset(toForm).top;
-    //     window.scrollTo({
-    //         top: y-135,
-    //         behavior: "smooth"
-    //     })
-    // });
 
     scrollToDestacados.addEventListener('click', () => {
         const y = getOffset(toDestacados).top;
