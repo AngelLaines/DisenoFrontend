@@ -7,6 +7,7 @@
     --NavFontSize: 1.15rem;
     --SectionTitleFontSoze: 2rem;
     --HoverFontSize: 1.2rem;
+    --BorderRadius: 30px;
 }
 
 @media (min-width:1020px) {
@@ -572,7 +573,20 @@ footer div div.social-media {
     text-align: center;
 }
 
+div.img-destacados{
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border-radius: var(--BorderRadius);
+    background: transparent;
+    text-align: center;
+}
+
+.img-destacados:hover{
+    background: #350d98;
+}
+
 .slider-container .img-destacados img {
+    border-radius: var(--BorderRadius);
     margin: 10px;
     width: 240px;
     height: 330px;
@@ -620,4 +634,8 @@ footer div div.social-media {
 .actor-section div p,
 .actor-section div h3 {
     padding: 10px
+}
+
+.actor-section img {
+    border-radius: var(--BorderRadius);
 }
