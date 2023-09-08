@@ -571,15 +571,11 @@ input {
 
 
 .logos {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-top: -9rem;
 }
 
 .logos_logo {
-    display: flex;
-    flex-direction: column;
     margin-top: 11rem;
 
 }
