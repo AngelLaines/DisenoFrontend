@@ -12,22 +12,22 @@
 </head>
 
 <body>
-    <header>
+    <header class="centrado flex bg-header-footer">
         <a id="anchorLogo" href="">
             <img id="logo" src="img/camara-de-video.png" alt="Inicio" title="inicio">
         </a>
         <nav>
             <div class="dropdown">
                 <button id="main-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="hamburguesa"></span>
+                    <span class="hamburguesa"></span>
+                    <span class="hamburguesa"></span>
                 </button>
                 <div class="dropdown-child">
-                    <a id="to-destacados">Destacados</a>
-                    <a id="to-actor">Actor de la semana</a>
-                    <a id="to-awards">Premios y reconocimientos</a>
-                    <a id="to-top">Top pelicula de la semana</a>
+                    <a class="navegacion" id="to-destacados">Destacados</a>
+                    <a class="navegacion" id="to-actor">Actor de la semana</a>
+                    <a class="navegacion" id="to-awards">Premios y reconocimientos</a>
+                    <a class="navegacion" id="to-top">Top pelicula de la semana</a>
                 </div>
             </div>
         </nav>
@@ -72,8 +72,8 @@
         </section>
         <section id="actor">
             <h2>Mejor actor de la semana</h2>
-            <div class="actor-section">
-                <div class="actor-info">
+            <div class="actor-section flex">
+                <div class="flex actor-info">
                     <div>
                         <img src="img/actor/tony-stark.jpg" alt="">
                     </div>
@@ -92,7 +92,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                        <div class="rating-stars">
+                        <div class="flex justificado-centrado">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -107,7 +107,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                        <div class="rating-stars">
+                        <div class="flex justificado-centrado">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -122,7 +122,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                        <div class="rating-stars">
+                        <div class="flex justificado-centrado">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -137,7 +137,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
-                        <div class="rating-stars">
+                        <div class="flex justificado-centrado">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -153,18 +153,28 @@
         </section>
         <section id="awards">
             <h2>Enterate sobre los premios y reconocimientos</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sequi molestias amet, impedit odit
-                explicabo quis voluptate consectetur aliquam animi? Soluta facere officiis facilis deserunt delectus
-                rerum amet, dolor iure.
-                Omnis, nihil. Voluptatem magnam, optio placeat sit voluptatibus assumenda, maxime id omnis eum et
-                reprehenderit, ullam enim. Harum sapiente magnam voluptate ex in alias! Omnis debitis quisquam fuga
-                dicta vitae!
-                Laborum incidunt cumque enim beatae nihil, quia exercitationem obcaecati recusandae! Error nihil facere
-                laboriosam animi sapiente culpa eaque, necessitatibus sunt possimus fugit quaerat minus ullam
-                asperiores? Harum dolorem voluptate qui.
-                Culpa iste, facilis cumque minima ea, tempore praesentium aliquid dolorem saepe tempora quisquam iusto
-                consequuntur aspernatur ipsa quasi laboriosam! Aspernatur quae nam neque expedita dicta illo recusandae,
-                ducimus quos perferendis.</p>
+            <div class="awards-info flex centrado">
+                <div>
+                    <img class="awards-actor" src="img/awards/brendan-fraser.jpg" alt="">
+                </div>
+                <div class="awards-texto flex">
+                    <div>
+                        <p>El actor de 'La momia' vivió uno de los mejores retornos de Hollywood de los últimos años y se llevó el Oscar a Mejor Actor protagonista en 2023 por su trabajo en 'La ballena (The Whale)'. La increíble transformación de Brendan Fraser para 'The Whale' dejó sin opciones a los otros nominados. En la gala, el discurso de Brendan Fraser al recoger el Oscar nos dejó entre lágrimas.</p>
+                    </div>
+                    <div>
+                        <button class="awards-ver-mas form-input-hover">
+                            <a href="https://www.fotogramas.es/premios-oscar-cine/g13850529/actores-ganadores-oscar/">
+                                <div class="fila">
+                                    <p>Ver mas</p>
+                                    <svg viewBox="2 2 20 20">
+                                        <path d="m3 18 8-8 8 8"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="title-of-section" id="top-title">
             <h1>Top peliculas de la semana</h1>
@@ -191,36 +201,33 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer class="bg-header-footer" id="footer">
         <h1 id="form-title">Formulario de contacto</h1>
-        <div class="title-footer">
-            <div class="social-media">
-                <div class="logos">
-                    <div class="logos_logo">
+        <div class="title-footer columna">
+            <div class="social-media margen">
+                <div class="logos fila margen">
+                    <div class="logos_logo margen columna centrado">
                         <div class="form-div">
                             <form action="" method="post">
                                 <label for="">Asunto</label> <br>
-                                <input type="text" name="" id="asunto"> <br>
+                                <input class="input-sub-com form-input-hover" type="text" name="" id="asunto"> <br>
                                 <label for="">Comentario</label> <br>
-                                <input type="text" name="" id="comment"> <br>
-                                <button type="button" id="send">Enviar</button>
+                                <input class="input-sub-com form-input-hover" type="text" name="" id="comment"> <br>
+                                <button class="button-form form-input-hover" type="button" id="send">Enviar</button>
                             </form>
                         </div>
-                        <div>
-
-                        </div>
-                        <h3>Contactos adicionales | Redes sociales</h3>
-                        <div>
-                            <img src="img/facebook.png" alt="Facebook" title="Facebook">
-                            <img src="img/instagram.png" alt="Instagram" title="Instagram">
-                            <img src="img/youtube.png" alt="Youtube" title="Youtube">
+                        <div class="centrado columna margen">
+                            <h3 class="margen">Contactos adicionales | Redes sociales</h3>
+                            <div>
+                                <img class="social" src="img/facebook.png" alt="Facebook" title="Facebook">
+                                <img class="social" src="img/instagram.png" alt="Instagram" title="Instagram">
+                                <img class="social" src="img/youtube.png" alt="Youtube" title="Youtube">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
         <div class="copy">
             <p>Cinema &copy; 2023</p>
         </div>
