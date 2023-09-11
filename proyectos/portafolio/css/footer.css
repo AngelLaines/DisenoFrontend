@@ -1,0 +1,43 @@
+:root{
+    --BGColor: #2c3068;
+    --TextInputSize: 1.2rem;
+    --InputBorderRadius:15px;
+    --TextWeight: 600;
+}
+footer{
+    font-weight: var(--TextWeight);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BGColor);
+}
+
+.f-centrado{
+    text-align: center;
+    margin: 50px;
+}
+
+#send{
+    cursor: pointer;
+    font-weight: var(--TextWeight);
+    width: 100px;
+    height: 35px;
+    font-size: var(--TextInputSize);
+    border-radius: var(--InputBorderRadius);
+}
+
+#email,#subject,#message{
+    font-weight: var(--TextWeight);
+    height: 35px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: var(--TextInputSize);
+    border-radius: var(--InputBorderRadius);
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,57 @@
+:root{
+    --SectionTitleColor: #3a408b;
+    --SectionTitleSize: 1.5rem;
+    --WelcomeTitletextSize: 2rem;
+    --PhotoBorderRadius: 90px;
+}
+main{
+    padding-top: 90px;
+}
+.title-of-section{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--SectionTitleColor);
+    font-size: var(--SectionTitleSize);
+}
+
+.tamaño{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-title{
+    margin: 20px;
+    font-size: var(--WelcomeTitletextSize);
+}
+
+.personal-information{
+    display: flex;
+    flex-direction: row;
+}
+
+#my-photo{
+    width: 180px;
+    height: auto;
+    border-radius: var(--PhotoBorderRadius);
+    margin: 10px;
+}
+
+#my-information{
+    margin: 15px;
+    text-align: left;
+    
+}
