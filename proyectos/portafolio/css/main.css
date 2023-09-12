@@ -7,6 +7,16 @@
 main{
     padding-top: 90px;
 }
+
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.centrado{
+    align-items: center;
+}
+
 .title-of-section{
     height: 20vh;
     width: 100%;
@@ -22,7 +32,7 @@ main{
 .tamaño{
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 40px;
 }
 
 #banner{
@@ -41,11 +51,12 @@ main{
 .personal-information{
     display: flex;
     flex-direction: row;
+    width: 70%;
 }
 
 #my-photo{
     width: 180px;
-    height: auto;
+    height: 241px;
     border-radius: var(--PhotoBorderRadius);
     margin: 10px;
 }
@@ -54,4 +65,35 @@ main{
     margin: 15px;
     text-align: left;
     
+}
+
+.lenguajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    width: 70%;
+}
+
+.lenguajes div{
+    width: 50%;
+}
+
+.lenguajes-list{
+    display: flex;
+}
+
+.no-list{
+    list-style: none;
+}
+
+.languaje-icon{
+    width: 32px;
+    height: auto;
+    margin:10px;
+}
+
+.no-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
