@@ -4,6 +4,11 @@
     --InputBorderRadius:15px;
     --TextWeight: 600;
 }
+@media screen and (max-width:590px) {
+    :root {
+        --TextInputSize: 1rem;
+    }
+}
 footer{
     font-weight: var(--TextWeight);
     display: flex;

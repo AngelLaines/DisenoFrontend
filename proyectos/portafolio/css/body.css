@@ -19,6 +19,12 @@ body {
     font-weight: 600;
     text-align: justify;
     color: var(--FontColor);
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width:590px){
+    body{font-size: 1rem;}
+    
 }
 #btn-ir-arriba:hover {
     background: var(--ScrollToTopButtonHoverColor);

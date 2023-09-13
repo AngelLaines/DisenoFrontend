@@ -3,6 +3,12 @@
     --FontNavSize: 1.5rem;
 }
 
+@media screen and (max-width:590px){
+    :root {
+        --FontNavSize: 1.3rem;
+    }
+}
+
 .navegation {
     background: var(--BGColor);
     position: fixed;
