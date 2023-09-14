@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const scrollToProyectos = document.getElementById('to-proyectos');
     const scrollToLenguaje = document.getElementById('to-lenguajes');
-    const scrollToTrabajo = document.getElementById('to-trabajo');
+    const scrollToAbout = document.getElementById('to-acerca-de');
     const scrollToContacto = document.getElementById('to-contacto');
 
 
     const toProyectos = document.getElementById('proyectos-title');
     const toLenguaje = document.getElementById('lenguajes-title');
-    const toTrabajo = document.getElementById('trabajo-title');
+    const toAbout= document.getElementById('acerca-de-title');
     const toContacto = document.getElementById('contacto-title');
 
     window.addEventListener('scroll', () => {
@@ -30,28 +30,28 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToProyectos.addEventListener('click', () => {
         const y = getOffset(toProyectos).top;
         window.scrollTo({
-            top: y - 163,
+            top: y - 130,
             behavior: "smooth"
         });
     });
     scrollToLenguaje.addEventListener('click', () => {
         const y = getOffset(toLenguaje).top;
         window.scrollTo({
-            top: y - 163,
+            top: y - 130,
             behavior: "smooth"
         });
     });
-    scrollToTrabajo.addEventListener('click', () => {
-        const y = getOffset(toTrabajo).top;
+    scrollToAbout.addEventListener('click', () => {
+        const y = getOffset(toAbout).top;
         window.scrollTo({
-            top: y - 163,
+            top: y - 130,
             behavior: "smooth"
         });
     });
     scrollToContacto.addEventListener('click', () => {
         const y = getOffset(toContacto).top;
         window.scrollTo({
-            top: y - 163,
+            top: y - 130,
             behavior: "smooth"
         });
     });
