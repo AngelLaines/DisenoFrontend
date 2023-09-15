@@ -17,7 +17,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    text-align: justify;
+    /* text-align: justify; */
     color: var(--FontColor);
     transition: all 0.2s ease;
 }

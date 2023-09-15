@@ -72,6 +72,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -192,10 +193,18 @@ main {
     text-decoration: none;
 }
 
-.logo-unison {
+.logos {
     width: 150px;
     height: 150px;
     margin: 10px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:440px) {
+    .logos{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .about-information {
@@ -209,5 +218,8 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    
+}
+
+.border-image-radius{
+    border-radius: var(--InputBorderRadius);
 }

@@ -30,14 +30,24 @@ footer{
     border-radius: var(--InputBorderRadius);
 }
 
-#email,#subject,#message{
-    font-weight: var(--TextWeight);
+.form-input-size{
     height: 35px;
     width: 300px;
+}
+.form-textarea-size{
+    width: 300px;
+    resize: none;
+}
+.form-margin{
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: var(--TextInputSize);
+}
+.form-border{
     border-radius: var(--InputBorderRadius);
+}
+.form-font{
+    font-weight: var(--TextWeight);
+    font-size: var(--TextInputSize);
 }
 .contacto{
     display: flex;
@@ -46,3 +56,11 @@ footer{
     align-items: center;
 }
 
+.copy{
+    margin: 20px;
+}
+
+.form-title{
+    margin-bottom: 10px;
+    text-align: center;
+}

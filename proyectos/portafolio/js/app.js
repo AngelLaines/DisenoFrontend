@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     scrollToProyectos.addEventListener('click', () => {
+        navBarLinks();
         const y = getOffset(toProyectos).top;
         window.scrollTo({
             top: y - 130,
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     scrollToLenguaje.addEventListener('click', () => {
+        navBarLinks();
         const y = getOffset(toLenguaje).top;
         window.scrollTo({
             top: y - 130,
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     scrollToAbout.addEventListener('click', () => {
+        navBarLinks();
         const y = getOffset(toAbout).top;
         window.scrollTo({
             top: y - 130,
@@ -49,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     scrollToContacto.addEventListener('click', () => {
+        navBarLinks();
         const y = getOffset(toContacto).top;
         window.scrollTo({
             top: y - 130,
@@ -80,3 +84,9 @@ function getOffset(el) {
 /**
  * Funcion tomada de https://www.delftstack.com/es/howto/javascript/get-position-of-element-in-javascript/
  */
+
+function navBarLinks(){
+    if (window.innerWidth<=720) {
+        document.body.classList.toggle('visible-menu');
+    }
+}
