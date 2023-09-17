@@ -51,9 +51,8 @@ footer{
 }
 .contacto{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 .copy{
@@ -63,4 +62,100 @@ footer{
 .form-title{
     margin-bottom: 10px;
     text-align: center;
+}
+
+.fa-facebook {
+    background:#1877f2;
+} 
+ 
+.fa-github {
+    background:#000000;
+}
+ 
+.fa-x-twitter {
+    background: #000000;
+}
+ 
+.fa-google{
+    background: #f85a5a;
+}
+ 
+.fa-linkedin {
+    background: #2a66e9;
+}
+ 
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    justify-content: center;
+}
+ 
+.redes i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+ 
+.redes a {
+    text-decoration: none;
+}
+ 
+.redes i:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+    opacity: .9;
+}
+
+.footer-div-margin-right{
+    margin-right: 10%;
+}
+
+.footer-div-margin-left{
+    margin-left: 10%;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circular-icon{
+    border-radius: 90px;
+}
+
+@media screen and (max-width:870px){
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-div-margin-right{
+        margin-right: 0px;
+    }
+    
+    .footer-div-margin-left{
+        margin-left: 0px;
+    }
+    
+    .form-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .social-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
 }

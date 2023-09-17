@@ -119,6 +119,11 @@ main {
     width: 32px;
     height: auto;
     margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.languaje-icon-rotate:hover .languaje-icon{
+    transform: rotate(360deg) translate(0px, 0px);
 }
 
 .no-list li {
@@ -198,6 +203,10 @@ main {
     height: 150px;
     margin: 10px;
     transition: all 0.3s ease;
+}
+
+.logos:hover{
+    transform: rotate(-15deg) translate(0px, 0px);
 }
 
 @media screen and (max-width:440px) {
