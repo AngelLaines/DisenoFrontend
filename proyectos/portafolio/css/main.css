@@ -3,10 +3,11 @@
     --SectionTitleSize: 1.5rem;
     --WelcomeTitletextSize: 2rem;
     --PhotoBorderRadius: 90px;
-    --SeeMoreSVGColor: #373c82;
+    --SeeMoreSVGColor: #ffffff;
     --TextInputSize: 1.2rem;
     --InputBorderRadius: 15px;
     --TextWeight: 600;
+    --BoxShadowImage: -5px 5px 5px rgba(19, 18, 18, 0.5);
 }
 
 @media screen and (max-width:590px) {
@@ -19,6 +20,10 @@
 
 main {
     padding-top: 90px;
+}
+
+.border-radius-img{
+    border-radius: 90px;
 }
 
 .columna {
@@ -40,12 +45,15 @@ main {
     justify-content: center;
     background-color: var(--SectionTitleColor);
     font-size: var(--SectionTitleSize);
+    box-shadow: 0px 4px 6px rgba(19, 18, 18, 0.4);
 }
 
 .tamaño {
     width: 100%;
     height: auto;
     padding: 40px;
+    color:black;
+    text-shadow: -5px 4px 5px rgba(19, 18, 18, 0.4);
 }
 
 #banner {
@@ -81,6 +89,7 @@ main {
     height: 241px;
     border-radius: var(--PhotoBorderRadius);
     margin: 10px;
+    box-shadow: var(--BoxShadowImage);
 }
 
 #my-information {
@@ -120,6 +129,7 @@ main {
     height: auto;
     margin: 10px;
     transition: all 0.3s ease;
+    box-shadow: var(--BoxShadowImage);
 }
 
 .languaje-icon-rotate:hover .languaje-icon{
@@ -133,7 +143,7 @@ main {
 }
 
 .border {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
@@ -157,7 +167,10 @@ main {
     font-size: var(--TextInputSize);
     border-radius: var(--InputBorderRadius);
     margin: 10px;
+    background-color: #565dc1;
+    color: white;
     transition: all 0.3s ease;
+    box-shadow: var(--BoxShadowImage);
 }
 
 .see-more-button:hover .flecha {
@@ -202,6 +215,7 @@ main {
     width: 150px;
     height: 150px;
     margin: 10px;
+    box-shadow: var(--BoxShadowImage);
     transition: all 0.3s ease;
 }
 

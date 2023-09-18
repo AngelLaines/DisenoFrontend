@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const toAbout= document.getElementById('acerca-de-title');
     const toContacto = document.getElementById('contacto-title');
 
+    const sendButton = document.getElementById('send');
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
             scrollToTopButton.style.display = 'block';
@@ -63,6 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.getElementById('main-menu');
     menuButton.addEventListener('click', () => {
         document.body.classList.toggle('visible-menu');
+    });
+
+    sendButton.addEventListener('click',()=>{
+        alert('Comming soon...');
     });
 
 });
